@@ -1,0 +1,12 @@
+{
+  "db": {
+    "name": "db",
+    "connector": "memory"
+  },
+  "reservationDS": {
+    "name": "reservationDS",
+    "localStorage": "",
+    "file": "db.json",
+    "connector": "memory"
+  }
+}
