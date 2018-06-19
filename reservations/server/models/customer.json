@@ -1,16 +1,13 @@
 {
-  "name": "campground",
-  "plural": "campgrounds",
-  "base": "PersistedModel",
+  "name": "customer",
+  "base": "User",
   "idInjection": true,
   "options": {
     "validateUpsert": true
   },
   "properties": {
     "name": {
-      "type": "string",
-      "required": true,
-      "default": "1"
+      "type": "string"
     }
   },
   "validations": [],
@@ -32,9 +29,9 @@
       "permission": "DENY"
     },
     {
-      "accessType": "READ",
+      "accessType": "*",
       "principalType": "ROLE",
-      "principalId": "$everyone",
+      "principalId": "admin",
       "permission": "ALLOW"
     }
   ],
